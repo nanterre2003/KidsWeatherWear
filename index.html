@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsWeatherWear | Smart Nordic Outfit Recommendations</title>
+    <meta name="description" content="KidsWeatherWear is an iOS app that gives Nordic parents daily outfit advice based on live weather, helping you ensure your kids are always dressed right for the outdoors.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="aurora-background">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 10C17 7.23858 14.7614 5 12 5C9.23858 5 7 7.23858 7 10C7 10.3667 7.03953 10.724 7.1147 11.069C6.42533 11.1966 5.79257 11.5303 5.3 12.0228C4.30761 13.0152 4.30761 14.6241 5.3 15.6165C6.29239 16.6089 7.90132 16.6089 8.89371 15.6165" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 21V15M11 15L8 18M11 15L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.8853 11.069C17.5747 11.1966 18.2074 11.5303 18.7 12.0228C19.6924 13.0152 19.6924 14.6241 18.7 15.6165C17.7076 16.6089 16.0987 16.6089 15.1063 15.6165" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <span class="logo-text">KidsWeatherWear</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it Works</a>
+            <a href="#contact" class="btn-primary-small">Join Waitlist</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">App Store Coming Soon</div>
+                <h1 class="hero-title">
+                    Never guess <br>
+                    <span class="gradient-text">what they should wear</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The smartest weather app for Nordic parents. Real-time outfit recommendations tailored for Swedish and Finnish weather conditions, ensuring your child is always perfectly dressed for the outdoors.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn-primary">Get Early Access</a>
+                    <a href="#features" class="btn-secondary">Discover Features</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card app-mockup">
+                    <div class="mockup-header">
+                        <span>Espoo, Finland</span>
+                        <span>-5°C</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-item">
+                            <div class="mockup-icon">❄️</div>
+                            <div class="mockup-text">
+                                <strong>Winter Overall</strong>
+                                <span>Essential for today</span>
+                            </div>
+                        </div>
+                        <div class="mockup-item">
+                            <div class="mockup-icon">🧤</div>
+                            <div class="mockup-text">
+                                <strong>Waterproof Mittens</strong>
+                                <span>Keep hands dry</span>
+                            </div>
+                        </div>
+                        <div class="mockup-item missing">
+                            <div class="mockup-icon">👢</div>
+                            <div class="mockup-text">
+                                <strong>Winter Boots</strong>
+                                <span>Missing in wardrobe!</span>
+                            </div>
+                            <a href="#" class="mockup-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Smarter Parenting, <br>Powered by Weather Data</h2>
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🌤️</div>
+                    <h3>Real-time Conditions</h3>
+                    <p>We analyze local Nordic weather data instantly to provide the most accurate clothing advice for the exact moment your child steps outside.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🎒</div>
+                    <h3>Smart Wardrobe</h3>
+                    <p>Keep track of your child's gear. The app cross-references the weather with what you own, immediately alerting you if an essential item is missing.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🛒</div>
+                    <h3>Direct Shopping</h3>
+                    <p>Missing rain pants? We connect you directly with premium Nordic childrenswear retailers like Reima and Jollyroom to buy high-quality gear in one tap.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">KidsWeatherWear</span>
+                <p>Designed in the Nordics, for the Nordics.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="mailto:partner@kidsweatherwear.com">Partner with us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="current-year"></span> KidsWeatherWear. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
