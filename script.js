@@ -14,4 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Handle Waitlist Form Submission
+    const form = document.getElementById('waitlist-form');
+    const successMessage = document.getElementById('form-success');
+    
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.style.display = 'none';
+            successMessage.classList.remove('hidden');
+        });
+    }
 });

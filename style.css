@@ -458,3 +458,95 @@ footer {
         gap: 1rem;
     }
 }
+/* --- Contact / Waitlist Section --- */
+.contact {
+    padding: 2rem 5% 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    max-width: 600px;
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-card .section-title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.waitlist-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.waitlist-form input[type="email"] {
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+    border: 1px solid var(--glass-border);
+    background: rgba(15, 23, 42, 0.6);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.waitlist-form input[type="email"]::placeholder {
+    color: var(--text-secondary);
+}
+
+.waitlist-form input[type="email"]:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.form-success {
+    margin-top: 1rem;
+    padding: 2rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 16px;
+    animation: fadeUp 0.5s ease forwards;
+}
+
+.form-success.hidden {
+    display: none;
+}
+
+.success-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.form-success h3 {
+    color: #34d399;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-success p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
