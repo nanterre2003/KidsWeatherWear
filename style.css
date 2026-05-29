@@ -550,3 +550,134 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* --- B2B & Showcase Custom Styles --- */
+.hero-image-wrapper {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.app-screenshot {
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    background: #000;
+}
+
+.floating-avatar {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: float 6s infinite alternate ease-in-out;
+}
+
+.float-left {
+    top: 20%;
+    left: -60px;
+    animation-delay: -2s;
+}
+
+.float-right {
+    bottom: 20%;
+    right: -60px;
+    animation-delay: -4s;
+}
+
+.partners {
+    padding: 6rem 5%;
+}
+
+.partners-card {
+    padding: 4rem;
+    text-align: center;
+}
+
+.partners-header {
+    margin-bottom: 3rem;
+}
+
+.partners-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.partners-header p {
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.partner-feature h4 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.pf-icon {
+    font-size: 3rem;
+}
+
+.partners-cta p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.showcase {
+    padding: 2rem 5% 6rem;
+}
+
+.showcase-card {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.showcase-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.avatars-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.avatar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.avatar-item img:hover {
+    transform: scale(1.1);
+}
+
+.avatar-item span {
+    font-weight: 600;
+    color: var(--accent-primary);
+}
+
+.highlight-link {
+    color: var(--accent-tertiary) !important;
+    font-weight: 600;
+}
